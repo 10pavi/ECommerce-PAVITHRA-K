@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const sqlite3 = require("sqlite3").verbose();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const JWT_SECRET =
   process.env.JWT_SECRET || "TaskManagement_JWT_2026_Secure_Key_9x7P2";
